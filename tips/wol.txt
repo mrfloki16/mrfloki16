@@ -1,0 +1,15 @@
+# Useful Net Tools
+$ sudo apt-get install net-tools
+
+# Show IP adress
+$ ip addr
+
+# Useful information
+sudo ethtool <NIC>
+
+# Make wol working (need everytime)
+sudo ethtool -s <NIC> wol g
+
+# Wake on Lan
+$ sudo apt-get install etherwake
+$ wakeonlan xx:yy:zz:11:22:33

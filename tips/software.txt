@@ -1,0 +1,36 @@
+--------
+SOFTWARE
+--------
+
+WINDOWS
+
+balenaEtcher
+rufus
+putty
+SD Card Formatter
+Win32DiskImager
+Calibre
+Smart Switch (tablette samsung)
+ratioMaster.net
+FileZilla
+KidZoom
+MediaCreationTool
+MD5 and SHA Checksum Tool
+VirtualBox
+h2testw
+Antidote
+GuiFormat
+HWMonitor
+
+
+LINUX
+
+balenaEtcher
+libncurses5-dev (progress)
+figlet
+sysvbanner
+
+
+OS
+
+Androidx86 Alien (/etc/default/grub)
