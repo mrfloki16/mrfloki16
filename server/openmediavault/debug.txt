@@ -1,0 +1,6 @@
+# Reinstall when error 403
+$ apt install openmediavault
+$ systemctl status openmediavault-engined
+$ systemctl unmask openmediavault-engined
+$ systemctl enable openmediavault-engined
+$ systemctl start openmediavault-engined

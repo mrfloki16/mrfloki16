@@ -1,0 +1,11 @@
+# Enable root and ssh
+$ sudo passwd root
+$ sudo vi /etc/ssh/sshd_config
+> PermitRootLogin yes
+$ sudo /etc/init.d/ssh restart
+
+# Ssh in root, change pi name and home directory
+$ usermod -l newname pi
+$ usermod -m -d /home/newname newname
+$ sudo passwd newname
+
