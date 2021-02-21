@@ -1,0 +1,15 @@
+# Install docker
+$ sudo apt install docker.io
+
+# Start and automate docker
+$ sudo systemctl start docker
+$ sudo systemctl enable docker
+$ sudo systemctl enable docker
+
+# Add user
+$ sudo groupadd docker
+$ sudo usermod -aG docker $USER
+$ newgrp docker
+
+# Check docker version
+$ docker --version
