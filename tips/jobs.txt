@@ -1,0 +1,6 @@
+# Running Jobs Manipulation
+$ ctrl-z
+$ bg 
+$ fg %n
+$ command &
+$ nohup command &

@@ -1,0 +1,9 @@
+# MOUNTING Devices
+$ lsblk
+$ sudo lsblk -f
+$ mount /dev/sdx /media/HDD
+
+# Formating
+$ sudo mkfs.ntfs /dev/sdx
+$ sudo dd if=/dev/zero bs=1m of=/dev/sdx1
+
