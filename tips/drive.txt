@@ -2,8 +2,17 @@
 $ lsblk
 $ sudo lsblk -f
 $ mount /dev/sdx /media/HDD
+$ umount /dev/sdXn
 
 # Formating
-$ sudo mkfs.ntfs /dev/sdx
-$ sudo dd if=/dev/zero bs=1m of=/dev/sdx1
+$ sudo dd if=/dev/zero bs=1m of=/dev/sdX
+$ sudo mkfs.ntfs /dev/sdX
+
+# Partitionning
+$ sudo fdisk /dev/sdX
+
+# Make bootable USB
+$ sudo wipefs --all /dev/sdX
+$ sudo dd bs=4M if=path/to/.iso of=/dev/sdX status=progress oflag=sync
+
 
