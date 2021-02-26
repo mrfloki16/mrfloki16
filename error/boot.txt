@@ -1,0 +1,6 @@
+#####COMMUN ERROR ON BOOT######
+
+# no irq handler for vector 
+$ nano /etc/default/grub
+>GRUB_CMDLINE_LINUX="noapic = acpi=noirq"
+$ grub-mkconfig -o /boot/grub/grub.cfg
