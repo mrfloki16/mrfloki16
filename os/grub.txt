@@ -1,0 +1,10 @@
+# Grub on UEFI
+
+# Grub on legacy/csm/mbr
+
+
+# How to generate an other os in grub
+$ mount /dev/sdXn /mnt
+$ os-prober
+$ grub-mkconfig -o /boot/grub/grub.cfg
+
