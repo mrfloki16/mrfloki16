@@ -1,0 +1,24 @@
+# install Samba
+$ apt-get install samba
+
+# Check if ok
+$ whereis samba
+
+# Edit samba configuration
+$ sudo nano /etc/samba/smb.conf
+[DIRECTORYname]
+	comment = Samba on Server
+	path = /media/dir
+	read only = no
+	browsable = yes
+	valid users = user
+	guest ok = no
+
+# Restart Samba
+$ sudo service smbd restart
+
+# Update the firewall rules
+$ sudo ufw allow samba
+
+# Set samba password
+$ sudo smbpasswd -a username

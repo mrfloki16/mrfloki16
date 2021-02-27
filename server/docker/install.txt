@@ -4,7 +4,7 @@ $ sudo apt install docker.io
 # Start and automate docker
 $ sudo systemctl start docker
 $ sudo systemctl enable docker
-$ sudo systemctl enable docker
+$ sudo systemctl status docker
 
 # Add user
 $ sudo groupadd docker

@@ -15,4 +15,9 @@ $ sudo fdisk /dev/sdX
 $ sudo wipefs --all /dev/sdX
 $ sudo dd bs=4M if=path/to/.iso of=/dev/sdX status=progress oflag=sync
 
-
+# Make autoboot a drive
+$ blkid
+# Change /etc/fstab
+$ sudo nano /etc/fstab
+# Check if all works
+$ sudo mount -a
