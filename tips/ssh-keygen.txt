@@ -1,0 +1,5 @@
+# Ssh without password, can be with passphrase, more secure
+$ ssh-keygen -t rsa
+$ ssh-copy-id user@host
+
+
