@@ -9,3 +9,5 @@ $ usermod -l newname pi
 $ usermod -m -d /home/newname newname
 $ sudo passwd newname
 
+# change the user group
+$ sudo groupmod -n newgrp oldgroup
