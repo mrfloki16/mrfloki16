@@ -1,0 +1,14 @@
+# there is a crontab for each user
+$ crontab -e
+$ crontab -u user -e 
+
+# set the path if needed in the file
+$ crontab -e
+>PATH=/bin/bash:/user/bin:
+
+# if sudo is needed
+$ sudo crontab -u root -e
+
+# the working directory start in ~/
+# so we can use `cd` command to avoid
+# absolute path
