@@ -4,7 +4,11 @@ $ crontab -u user -e
 
 # set the path if needed in the file
 $ crontab -e
->PATH=/bin/bash:/user/bin:
+>PATH=/usr/bin:/bin:
+
+# set user path with source in script
+>#!/bin/bash
+>source .profile
 
 # if sudo is needed
 $ sudo crontab -u root -e
