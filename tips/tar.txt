@@ -1,0 +1,27 @@
+# Creating an archive
+$ sudo tar cvf archive_name.tar /directory
+# Extracting (untar) an archive
+$ sudo tar xvf archive_name.tar
+# Listing an archive
+$ sudo tar tvf archive_name.tar
+# Extract files
+$ sudo tar xvf archive_file.tar /directory
+# Adding file or dir to existent archive
+$ sudo rvf archive_name.tar /directory
+# Verify files available
+$ sudo tar cvfW file_name.tar /directory 
+# Estimate the archive size
+tar -cf - /directory | wc -c
+
+# Creating gzipped archive (.tgz or .tar.gz)
+$ sudo tar cvzf archive_name.tgz /directory
+# Extract a gzipped archive
+$ sudo tar xvfz archive_name.tgz
+# Listing a gzipped archive
+$ sudo tar tvfz archive_name.tgz
+# Extract files
+$ tar xvfz archive_file.tgz /directory
+# Finding difference between gzip archive and file system
+$ sudo tar dfz file_name.tgz
+# Estimate the archive size
+$ tar -czf - /directory | wc -c
