@@ -1,10 +1,25 @@
-# Grub on UEFI
+# Grub on UEFI, sdXn : efi and boot flag
+$ fdisk /dev/sdX
+$ mkfs.fat -F32 /dev/sdXn
+$ mount /dev/sdXn /boot/efi
+$ grub-install --target=x86_64-efi --efi-directory=/boot/efi --bootloader-id=GRUB
+$ grub-mkconfig -o /boot/grub/brug.cfg
 
 # Grub on legacy/csm/mbr
-
+$ grub-install --target=i386-pc /dev/sdX
+$ grub-mkconfig -o /boot/grub/grub.cfg
 
 # How to generate an other os in grub
 $ mount /dev/sdXn /mnt
 $ os-prober
 $ grub-mkconfig -o /boot/grub/grub.cfg
 
+# Menuentry for iso file, add in /etc/grub.d/40_custom
+menuentry "Kali Live ISO" {
+        set isofile="/mnt/iso/kali-linux-2021.1-live-amd64.iso"
+        loopback loop (hd0,2)$isofile
+        linux (loop)/live/vmlinuz boot=live iso-scan/filename=${isofile} quiet splash
+        initrd (loop)/live/initrd.img
+}
+# Then update grub
+$ grub-mkconfig -o /boot/grub/grub.cfg
