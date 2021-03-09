@@ -1,0 +1,9 @@
+# Desktop can be
+> lightdm
+> lxdm
+> ...
+
+# if desktop add problem with taskbar, icon, etc
+$ sudo rm -r ~/.cache/sessions
+$ sudo systemctl restart <desktop>
+
