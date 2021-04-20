@@ -1,0 +1,8 @@
+# identify the shell
+$ tty
+
+# show all of the running process for a user
+$ ps -fu username
+
+# kil process id
+$ kill PID
