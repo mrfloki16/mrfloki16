@@ -2,4 +2,7 @@
 $ ssh-keygen -t rsa
 $ ssh-copy-id user@host
 
+# remove key from know host
+$ ssh-keygen -R <host>
+$ ssh-keygen -R <ip>
 
